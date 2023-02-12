@@ -1,0 +1,200 @@
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+  #hero {
+    /* centers button */
+    text-align: center;
+    /* 116px - 164px top */
+    /* 60px - 100px  bottom */
+    padding: clamp(7.25rem, 16.82vw, 10.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
+    position: relative;
+  }
+  #hero .cs-container {
+    width: 100%;
+    max-width: 90rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #hero .cs-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #hero .cs-title {
+    /* 39px - 61px */
+    font-size: clamp(2.4375rem, 5vw, 3.8125rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: center;
+    max-width: 43.75rem;
+    margin: 0 auto 1rem;
+    color: var(--headerColor);
+    position: relative;
+  }
+  #hero .cs-text {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.5rem;
+    text-align: center;
+    width: 100%;
+    max-width: 33.1875rem;
+    margin: 0 auto;
+    /* 28px - 40px */
+    margin-bottom: clamp(1.75rem, 3.92vw, 2.5rem);
+    color: var(--bodyTextColor);
+  }
+  #hero .cs-stats-group {
+    max-width: 32.625rem;
+    margin: 0;
+    /* 40px - 98px */
+    margin-top: clamp(2.5rem, calc(7.3vw), 6.125rem);
+    /* 40px - 48px */
+    margin-bottom: clamp(2.5rem, 10vw, 3rem);
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* 20px - 40px */
+    column-gap: clamp(1.25rem, 5.9vw, 2.5rem);
+  }
+  #hero .cs-item {
+    list-style: none;
+    width: auto;
+  }
+  #hero .cs-number {
+    /* 25px - 49px */
+    font-size: clamp(1.5625rem, 3.8vw, 3.0625rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    color: var(--headerColor);
+    display: block;
+  }
+  #hero .cs-desc {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 2.1vw, 1rem);
+    line-height: 1.5em;
+    color: #767676;
+  }
+  #hero .cs-picture {
+    width: 100%;
+    max-width: 36.5625rem;
+    /* 380px - 453px */
+    height: clamp(23.75rem, 59vw, 28.3215rem);
+    border-radius: 1rem;
+    /* clips the img tag corners */
+    overflow: hidden;
+    display: block;
+    position: relative;
+  }
+  #hero .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act as a background image */
+    object-fit: cover;
+  }
+  #hero .image-box {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 38.1875em;
+    height: 53.8125em;
+    font-size: min(1.4vw, 1em);
+  }
+  #hero .image-box:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: var(--primary);
+    opacity: 1;
+    top: 2.5em;
+    left: -2.5em;
+  }
+  #hero .image-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64em) {
+  #hero {
+    text-align: left;
+  }
+  #hero .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 6.25rem;
+  }
+  #hero .cs-content {
+    width: 52%;
+    /* prevents flex-box from squishing it */
+    flex: none;
+    align-items: flex-start;
+    /* sends it to the right */
+    order: 2;
+  }
+  #hero .cs-title,
+  #hero .cs-text {
+    text-align: left;
+    margin-left: 0;
+  }
+  #hero .cs-picture {
+    max-width: 39.375rem;
+    /* 623px - 814px */
+    height: clamp(38.9375rem, 60vw, 50.875rem);
+  }
+  #hero .cs-waves {
+    height: 100%;
+    width: calc(49vw);
+    right: 50%;
+    margin-left: -18.75rem;
+  }
+  #hero .image-box {
+    margin: 0;
+    margin-right: 10.625em;
+  }
+}
+
+/*-- -------------------------- -->
+<---           Services             -->
+<--- -------------------------- -*/
+.service {
+    position: relative;
+    width: 100%;
+    padding: 7em 0 7em 0;
+}
+
+.service .service-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+}
+
+.service .service-item img {
+    margin-bottom: 20px;
+}
+
+.service .service-item h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.service .service-item p {
+    margin: 0;
+}
+
