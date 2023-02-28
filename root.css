@@ -14,6 +14,9 @@
       /* 60px - 100px top and bottom */
       --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
     }
+    html {
+  scroll-behavior: smooth;
+}
     body,
     html {
       margin: 0;
